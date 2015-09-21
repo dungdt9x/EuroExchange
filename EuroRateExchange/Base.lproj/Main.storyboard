@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="a2j-kP-3oc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--EURO Exchange-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="EuroRateExchange" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIv-RL-04M">
+                                <rect key="frame" x="41" y="132" width="293" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.88726979283246998" blue="0.51506955983196334" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="a7K-pn-K8F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
+                                <state key="normal" title="Show EURO Exchange Today">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showTodayExchange:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="msY-Ko-fLH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyB-FL-uWv">
+                                <rect key="frame" x="41" y="244" width="293" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.78230452281009377" blue="0.69765656596845216" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Hib-rL-AaQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="16"/>
+                                <state key="normal" title="Show EURO Exchange Last 90 Days">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLast90DaysExchange:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wGA-5T-zHw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rIv-RL-04M" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="68" id="4WC-a8-bvD"/>
+                            <constraint firstAttribute="trailing" secondItem="rIv-RL-04M" secondAttribute="trailing" constant="41" id="BKd-d1-kOM"/>
+                            <constraint firstAttribute="trailing" secondItem="oyB-FL-uWv" secondAttribute="trailing" constant="41" id="Lis-Rl-LeQ"/>
+                            <constraint firstItem="oyB-FL-uWv" firstAttribute="top" secondItem="rIv-RL-04M" secondAttribute="bottom" constant="68" id="bAZ-3B-wSw"/>
+                            <constraint firstItem="oyB-FL-uWv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="41" id="hqO-a6-RaI"/>
+                            <constraint firstItem="rIv-RL-04M" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="41" id="lmO-RF-wUr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="EURO Exchange" id="2zw-rC-4y8"/>
+                    <connections>
+                        <outlet property="btnShow90DaysEx" destination="oyB-FL-uWv" id="lFQ-Ov-WuN"/>
+                        <outlet property="btnShowTodayEx" destination="rIv-RL-04M" id="o5g-hK-CnQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="998.5" y="635.5"/>
+        </scene>
+        <!--Show Detail Table View Controller-->
+        <scene sceneID="9Um-mO-Mjw">
+            <objects>
+                <tableViewController storyboardIdentifier="ShowDetail" id="rT4-bV-9Gn" customClass="ShowDetailTableViewController" customModule="EuroRateExchange" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="81" sectionHeaderHeight="22" sectionFooterHeight="22" id="T1h-xk-4KB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTableViewCell" rowHeight="81" id="uQ0-CA-sFf" customClass="CustomTableViewCell" customModule="EuroRateExchange" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="22" width="375" height="81"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uQ0-CA-sFf" id="5co-UG-Tgv">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="80.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOz-eM-rtB">
+                                            <rect key="frame" x="20" y="29" width="122" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="P40-uR-Une"/>
+                                                <constraint firstAttribute="width" constant="122" id="cmL-xi-E22"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ew8-nw-mRD">
+                                            <rect key="frame" x="231" y="29" width="122" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="122" id="17K-Vy-eyC"/>
+                                                <constraint firstAttribute="height" constant="21" id="zHb-yv-bjN"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="jOz-eM-rtB" firstAttribute="top" secondItem="5co-UG-Tgv" secondAttribute="top" constant="29" id="5V4-lw-j8N"/>
+                                        <constraint firstItem="jOz-eM-rtB" firstAttribute="leading" secondItem="5co-UG-Tgv" secondAttribute="leading" constant="20" id="7jv-5Y-Eq0"/>
+                                        <constraint firstItem="Ew8-nw-mRD" firstAttribute="top" secondItem="5co-UG-Tgv" secondAttribute="top" constant="29" id="TII-cs-Nmf"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ew8-nw-mRD" secondAttribute="trailing" constant="22" id="Vm5-c4-7jn"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lbl_ID" destination="jOz-eM-rtB" id="Wmg-DR-MAt"/>
+                                    <outlet property="lbl_Rate" destination="Ew8-nw-mRD" id="HNC-RS-cY8"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rT4-bV-9Gn" id="ySC-oX-ygQ"/>
+                            <outlet property="delegate" destination="rT4-bV-9Gn" id="hgb-Ag-xGt"/>
+                        </connections>
+                    </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="demo" destination="T1h-xk-4KB" id="yw3-eN-vcg"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USV-cM-gdv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1500.5" y="342.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qzl-U1-E2R">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a2j-kP-3oc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Akx-0C-t46">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="oFG-5v-x9W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mL3-gH-Zch" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="571.5" y="635.5"/>
+        </scene>
+    </scenes>
+</document>

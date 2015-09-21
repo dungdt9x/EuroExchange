@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50021FA2339298572B511396 /* libPods-EuroRateExchange.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D2AED2310D8D79B3FCC11A /* libPods-EuroRateExchange.a */; };
+		6078620C1BAFF93300A95E2A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6078620B1BAFF93300A95E2A /* CustomTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		B0FE99AF1BAFBE490098D5F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FE99AE1BAFBE490098D5F8 /* AppDelegate.swift */; };
+		B0FE99B11BAFBE490098D5F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FE99B01BAFBE490098D5F8 /* ViewController.swift */; };
+		B0FE99B41BAFBE490098D5F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FE99B21BAFBE490098D5F8 /* Main.storyboard */; };
+		B0FE99B61BAFBE490098D5F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0FE99B51BAFBE490098D5F8 /* Images.xcassets */; };
+		B0FE99B91BAFBE490098D5F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0FE99B71BAFBE490098D5F8 /* LaunchScreen.xib */; };
+		B0FE99C51BAFBE490098D5F8 /* EuroRateExchangeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FE99C41BAFBE490098D5F8 /* EuroRateExchangeTests.swift */; };
+		B0FE99D21BAFBEF50098D5F8 /* MyRestAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FE99D01BAFBEF50098D5F8 /* MyRestAPIClient.m */; };
+		B0FE99DB1BAFCE9C0098D5F8 /* ShowDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FE99DA1BAFCE9C0098D5F8 /* ShowDetailTableViewController.swift */; };
+		B0FE99DD1BAFD1CB0098D5F8 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = B0FE99DC1BAFD1CB0098D5F8 /* back.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0FE99BF1BAFBE490098D5F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0FE99A11BAFBE490098D5F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0FE99A81BAFBE490098D5F8;
+			remoteInfo = EuroRateExchange;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		29D2AED2310D8D79B3FCC11A /* libPods-EuroRateExchange.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EuroRateExchange.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6078620B1BAFF93300A95E2A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		88B6EFBE6DB2D97E4BF744E5 /* Pods-EuroRateExchange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EuroRateExchange.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EuroRateExchange/Pods-EuroRateExchange.debug.xcconfig"; sourceTree = "<group>"; };
+		9F02C7CEEB9B1358209C9A8E /* Pods-EuroRateExchange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EuroRateExchange.release.xcconfig"; path = "Pods/Target Support Files/Pods-EuroRateExchange/Pods-EuroRateExchange.release.xcconfig"; sourceTree = "<group>"; };
+		B0FE99A91BAFBE490098D5F8 /* EuroRateExchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EuroRateExchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0FE99AD1BAFBE490098D5F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0FE99AE1BAFBE490098D5F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B0FE99B01BAFBE490098D5F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B0FE99B31BAFBE490098D5F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B0FE99B51BAFBE490098D5F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B0FE99B81BAFBE490098D5F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B0FE99BE1BAFBE490098D5F8 /* EuroRateExchangeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EuroRateExchangeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0FE99C31BAFBE490098D5F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0FE99C41BAFBE490098D5F8 /* EuroRateExchangeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EuroRateExchangeTests.swift; sourceTree = "<group>"; };
+		B0FE99CE1BAFBED60098D5F8 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		B0FE99CF1BAFBEF50098D5F8 /* MyRestAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRestAPIClient.h; sourceTree = "<group>"; };
+		B0FE99D01BAFBEF50098D5F8 /* MyRestAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRestAPIClient.m; sourceTree = "<group>"; };
+		B0FE99D11BAFBEF50098D5F8 /* ServicesAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesAPI.h; sourceTree = "<group>"; };
+		B0FE99DA1BAFCE9C0098D5F8 /* ShowDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDetailTableViewController.swift; sourceTree = "<group>"; };
+		B0FE99DC1BAFD1CB0098D5F8 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0FE99A61BAFBE490098D5F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50021FA2339298572B511396 /* libPods-EuroRateExchange.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0FE99BB1BAFBE490098D5F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080FF30E45CF470513139E02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29D2AED2310D8D79B3FCC11A /* libPods-EuroRateExchange.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		625163AC5EA0958AC5790A57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				88B6EFBE6DB2D97E4BF744E5 /* Pods-EuroRateExchange.debug.xcconfig */,
+				9F02C7CEEB9B1358209C9A8E /* Pods-EuroRateExchange.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B0FE99A01BAFBE490098D5F8 = {
+			isa = PBXGroup;
+			children = (
+				B0FE99AB1BAFBE490098D5F8 /* EuroRateExchange */,
+				B0FE99C11BAFBE490098D5F8 /* EuroRateExchangeTests */,
+				B0FE99AA1BAFBE490098D5F8 /* Products */,
+				625163AC5EA0958AC5790A57 /* Pods */,
+				080FF30E45CF470513139E02 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B0FE99AA1BAFBE490098D5F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0FE99A91BAFBE490098D5F8 /* EuroRateExchange.app */,
+				B0FE99BE1BAFBE490098D5F8 /* EuroRateExchangeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0FE99AB1BAFBE490098D5F8 /* EuroRateExchange */ = {
+			isa = PBXGroup;
+			children = (
+				B0FE99D31BAFBFDC0098D5F8 /* Objective-C Lib */,
+				B0FE99AE1BAFBE490098D5F8 /* AppDelegate.swift */,
+				B0FE99DA1BAFCE9C0098D5F8 /* ShowDetailTableViewController.swift */,
+				6078620B1BAFF93300A95E2A /* CustomTableViewCell.swift */,
+				B0FE99B01BAFBE490098D5F8 /* ViewController.swift */,
+				B0FE99B21BAFBE490098D5F8 /* Main.storyboard */,
+				B0FE99B51BAFBE490098D5F8 /* Images.xcassets */,
+				B0FE99B71BAFBE490098D5F8 /* LaunchScreen.xib */,
+				B0FE99AC1BAFBE490098D5F8 /* Supporting Files */,
+			);
+			path = EuroRateExchange;
+			sourceTree = "<group>";
+		};
+		B0FE99AC1BAFBE490098D5F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0FE99DC1BAFD1CB0098D5F8 /* back.png */,
+				B0FE99AD1BAFBE490098D5F8 /* Info.plist */,
+				B0FE99CE1BAFBED60098D5F8 /* Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0FE99C11BAFBE490098D5F8 /* EuroRateExchangeTests */ = {
+			isa = PBXGroup;
+			children = (
+				B0FE99C41BAFBE490098D5F8 /* EuroRateExchangeTests.swift */,
+				B0FE99C21BAFBE490098D5F8 /* Supporting Files */,
+			);
+			path = EuroRateExchangeTests;
+			sourceTree = "<group>";
+		};
+		B0FE99C21BAFBE490098D5F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0FE99C31BAFBE490098D5F8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0FE99D31BAFBFDC0098D5F8 /* Objective-C Lib */ = {
+			isa = PBXGroup;
+			children = (
+				B0FE99CF1BAFBEF50098D5F8 /* MyRestAPIClient.h */,
+				B0FE99D01BAFBEF50098D5F8 /* MyRestAPIClient.m */,
+				B0FE99D11BAFBEF50098D5F8 /* ServicesAPI.h */,
+			);
+			name = "Objective-C Lib";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0FE99A81BAFBE490098D5F8 /* EuroRateExchange */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0FE99C81BAFBE490098D5F8 /* Build configuration list for PBXNativeTarget "EuroRateExchange" */;
+			buildPhases = (
+				DB96939734E1EBF3C6A19241 /* Check Pods Manifest.lock */,
+				B0FE99A51BAFBE490098D5F8 /* Sources */,
+				B0FE99A61BAFBE490098D5F8 /* Frameworks */,
+				B0FE99A71BAFBE490098D5F8 /* Resources */,
+				D1F193875F2823DD330C1E6F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EuroRateExchange;
+			productName = EuroRateExchange;
+			productReference = B0FE99A91BAFBE490098D5F8 /* EuroRateExchange.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0FE99BD1BAFBE490098D5F8 /* EuroRateExchangeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0FE99CB1BAFBE490098D5F8 /* Build configuration list for PBXNativeTarget "EuroRateExchangeTests" */;
+			buildPhases = (
+				B0FE99BA1BAFBE490098D5F8 /* Sources */,
+				B0FE99BB1BAFBE490098D5F8 /* Frameworks */,
+				B0FE99BC1BAFBE490098D5F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0FE99C01BAFBE490098D5F8 /* PBXTargetDependency */,
+			);
+			name = EuroRateExchangeTests;
+			productName = EuroRateExchangeTests;
+			productReference = B0FE99BE1BAFBE490098D5F8 /* EuroRateExchangeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0FE99A11BAFBE490098D5F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = dungdtiosdeveloper;
+				TargetAttributes = {
+					B0FE99A81BAFBE490098D5F8 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					B0FE99BD1BAFBE490098D5F8 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = B0FE99A81BAFBE490098D5F8;
+					};
+				};
+			};
+			buildConfigurationList = B0FE99A41BAFBE490098D5F8 /* Build configuration list for PBXProject "EuroRateExchange" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0FE99A01BAFBE490098D5F8;
+			productRefGroup = B0FE99AA1BAFBE490098D5F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0FE99A81BAFBE490098D5F8 /* EuroRateExchange */,
+				B0FE99BD1BAFBE490098D5F8 /* EuroRateExchangeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0FE99A71BAFBE490098D5F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FE99B41BAFBE490098D5F8 /* Main.storyboard in Resources */,
+				B0FE99B91BAFBE490098D5F8 /* LaunchScreen.xib in Resources */,
+				B0FE99B61BAFBE490098D5F8 /* Images.xcassets in Resources */,
+				B0FE99DD1BAFD1CB0098D5F8 /* back.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0FE99BC1BAFBE490098D5F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D1F193875F2823DD330C1E6F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EuroRateExchange/Pods-EuroRateExchange-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB96939734E1EBF3C6A19241 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0FE99A51BAFBE490098D5F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FE99DB1BAFCE9C0098D5F8 /* ShowDetailTableViewController.swift in Sources */,
+				6078620C1BAFF93300A95E2A /* CustomTableViewCell.swift in Sources */,
+				B0FE99B11BAFBE490098D5F8 /* ViewController.swift in Sources */,
+				B0FE99D21BAFBEF50098D5F8 /* MyRestAPIClient.m in Sources */,
+				B0FE99AF1BAFBE490098D5F8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0FE99BA1BAFBE490098D5F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0FE99C51BAFBE490098D5F8 /* EuroRateExchangeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0FE99C01BAFBE490098D5F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0FE99A81BAFBE490098D5F8 /* EuroRateExchange */;
+			targetProxy = B0FE99BF1BAFBE490098D5F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B0FE99B21BAFBE490098D5F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0FE99B31BAFBE490098D5F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B0FE99B71BAFBE490098D5F8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0FE99B81BAFBE490098D5F8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0FE99C61BAFBE490098D5F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B0FE99C71BAFBE490098D5F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0FE99C91BAFBE490098D5F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88B6EFBE6DB2D97E4BF744E5 /* Pods-EuroRateExchange.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = EuroRateExchange/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = EuroRateExchange/Header.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B0FE99CA1BAFBE490098D5F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F02C7CEEB9B1358209C9A8E /* Pods-EuroRateExchange.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = EuroRateExchange/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = EuroRateExchange/Header.h;
+			};
+			name = Release;
+		};
+		B0FE99CC1BAFBE490098D5F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EuroRateExchangeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EuroRateExchange.app/EuroRateExchange";
+			};
+			name = Debug;
+		};
+		B0FE99CD1BAFBE490098D5F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EuroRateExchangeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EuroRateExchange.app/EuroRateExchange";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0FE99A41BAFBE490098D5F8 /* Build configuration list for PBXProject "EuroRateExchange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0FE99C61BAFBE490098D5F8 /* Debug */,
+				B0FE99C71BAFBE490098D5F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0FE99C81BAFBE490098D5F8 /* Build configuration list for PBXNativeTarget "EuroRateExchange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0FE99C91BAFBE490098D5F8 /* Debug */,
+				B0FE99CA1BAFBE490098D5F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0FE99CB1BAFBE490098D5F8 /* Build configuration list for PBXNativeTarget "EuroRateExchangeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0FE99CC1BAFBE490098D5F8 /* Debug */,
+				B0FE99CD1BAFBE490098D5F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0FE99A11BAFBE490098D5F8 /* Project object */;
+}
